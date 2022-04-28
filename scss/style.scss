@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    .header-top {
+      height: 40px;
+      background-color: whitesmoke;
+      .container {
+        height: 100%;
+        .row {
+          height: 100%;
+          
+          ul {
+            text-decoration: none;
+            margin: 0 !important;
+          }
+          .registration {
+            ul {
+                text-decoration: none;
+              li:not(:last-child) {
+                text-decoration: none;
+                &::after {
+                  content: "|";
+                  position: relative;
+                  left: 13px;
+                }
+              }
+            }
+          }
+        }
+      }
+       a{
+        text-decoration: none;
+        color: black;
+        }
+    }
+    .header-bottom {
+      .container {
+        .row {
+          ul {           
+            margin: 0;
+          }
+          .search-basket {
+            .search {
+              input {
+                border-radius: 20px;
+              }
+            }
+            .basket-wish {
+              display: flex;
+              align-items: center;
+              ul {
+                text-decoration: none;
+                width: 80px;
+                li {
+                    text-decoration: none;
+                  i {
+                    font-size: 25px;
+                  }
+                }
+              }
+            }
+          }
+          
+        }
+      }
+      a{
+        text-decoration: none;
+        color: black;
+        }
+    }
+  }
+
+  @media only screen and (max-width:960px){
+    .header-top{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:960px){
+    .nav-links{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:960px){
+    .search-basket{
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width:960){
+    .nav-links{
+        width: calc(100% - 690px);
+        
+    }
+}
+
+@media only screen and (max-width:991px){
+    .registration{
+        display: flex !important;
+        align-items: flex-end;
+    }
+}
+
+@media only screen and (min-width:960){
+    .nav-links{
+        width: calc(100% - 690px);
+        
+    }
+}
+
+
+
+
